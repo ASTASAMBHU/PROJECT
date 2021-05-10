@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+a{
+    text-decoration: none;
+    font-size: 12px;
+    color: #ffff99;
+}
+
+.grid-wrapper{
+	display: grid;
+	grid-gap: 2rem;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: 280px 280px 280px;
+	margin: 0;
+	padding: 0;
+    justify-content: center;
+	box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.main-container{
+	margin: 0 auto;
+	max-width: 1170px;
+	padding:2rem 1rem;
+}
+
+.grid_item{
+    background-size: cover;
+    background-position: center center;
+    border-radius: 4px;
+}
+#grid_1{
+    background-image: url(./SRC/depression.jpg);
+}
+#grid_2{
+    background-image: url(./SRC/ANXIETY.jpg);
+}
+#grid_3{
+    background-image: url(./SRC/COMPULSIVE_DISORDER.jpg);
+}
+#grid_4{
+    background-image: url(./SRC/STRESS_DISORDER.jpg);
+}
+
+#grid_6{
+    background-image: url(./SRC/MOOD_DISORDERS.jpg);
+}
+
+.head_Section{
+    padding: 20px 10px 0px 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    text-align: center;
+    
+}
+.head_Section h2{
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -0.9px;
+    color: #333;
+}
+.head_Section p{
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+    letter-spacing: 0;
+    font-weight: 400;
+    opacity: .7;
+    font-family: 'Montserrat', sans-serif;
+}
+.grid_item .layer{
+    background-color: rgba(78,232,99,0.65);
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-self: center;
+    
+}
+#grid_5{
+    background-color: rgba(72, 185, 87, 0.548);
+}
+.layer_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 1s ease-in;
+}
+.inner_text{
+    padding: 23px 60px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-self: center;
+}
+.inner_text h5{
+    font-size: 14px;
+    color: #ffff;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+.inner_text p{
+    color: #ffff;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    font-weight: 400;
+}
+.layer_text:hover{
+    background-color: rgba(8, 8, 8);
+}
+
+
+
+
+
+@media screen and (max-width:700px){ 
+    .head_Section h2{
+        font-size: 24px;
+    }
+}
+
+
+
+
+/*   --- Starts Carousel  */
+
+.heading{
+    margin-top: 30px;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+
+#customers-Testimonials .item{
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    opacity: 0.2;
+    transform: scale3d(0.8,0.8,1);
+    -webkit-transition: scale3d(0.8,0.8,1);
+    transition: all 0.3 ease-in-out;
+    -webkit-transition: all 0.3 ease-in-out ;
+    -moz-transition: all 0.3 ease-in-out;
+    font-family: 'Montserrat', sans-serif;
+}
+#customers-Testimonials .owl-item.active.center .item{
+    opacity: 1;
+    transform: scale3d(0.9,0.9,0.9);
+    -webkit-transform: scale3d(0.9,0.9,0.9);
+}
+#customers-Testimonials .owl-item.active.center .item .main_content{
+    background-color: rgba(10, 9, 9, 0.89);
+    /* position: relative;
+    z-index: 5; */
+    color: #ffff;
+    padding: 30px 40px;
+    border-radius: 5px;
+    box-shadow: -3px 7px 12px -1px rgba(55,96,78,0.62);
+    -webkit-box-shadow: -3px 7px 12px -1px rgba(55,96,78,0.62);
+    -moz-box-shadow: -3px 7px 12px -1px rgba(55,96,78,0.62);
+}
+.item .main_content {
+    font-size: 18px;
+    text-align: left;
+}
+
+.item .main_content div{
+    display: flex;
+}
+.item .main_content div span i{
+    font-size: 30px;
+}
+.item .main_content div p{
+    margin-left: 20px;
+    letter-spacing: 2px;
+    line-height: 25px;
+}
+  
+@media screen and (max-width:750px){ 
+    .heading{   
+        font-size: 1.5rem;
+    }
+}
